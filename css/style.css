@@ -1,8 +1,6 @@
 /*linear gradient background*/
 body {
-  background: #114357;
-  background: -webkit-linear-gradient(to right, #F29492, #114357);
-  background: linear-gradient(to right, #F29492, #114357);
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
 }
 /*navbar style*/
 .navbar{
@@ -18,4 +16,30 @@ body {
 }
 .glyphicon {
   color: #F29492;
+}
+/*hero card styling*/
+.card{
+  margin: 260px;
+}
+.card-title h2{
+  font-family: Spectral;
+  font-weight: 900;
+  text-align: center;
+  color:#154360;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.card-body p{
+  font-family: arvo;
+  text-align: justify;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+.btn{
+  background-color: #114357;
+  border-color:#114357;
+  margin-left:260px;
+  font-family: arvo;
+  font-size: 15px;
 }
