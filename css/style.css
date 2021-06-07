@@ -1,0 +1,21 @@
+/*linear gradient background*/
+body {
+  background: #114357;
+  background: -webkit-linear-gradient(to right, #F29492, #114357);
+  background: linear-gradient(to right, #F29492, #114357);
+}
+/*navbar style*/
+.navbar{
+  background-color: #114357;
+  border: none;
+}
+
+.navbar-header img{
+  border-radius: 60%;
+  height: 9%;
+  width :8%;
+  padding:6px;
+}
+.glyphicon {
+  color: #F29492;
+}
