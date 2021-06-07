@@ -43,3 +43,20 @@ body {
   font-family: arvo;
   font-size: 15px;
 }
+.jumbotron h3{
+  text-align: center;
+  text-transform: capitalize;
+  font-style: Cormorant;
+  font-weight: 300;
+  color: #114357;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#114357;
+   color: white;
+   text-align: left;
+   padding: 10px;
+}
