@@ -60,3 +60,28 @@ body {
    text-align: left;
    padding: 10px;
 }
+@media screen and (min-width:480px) and (max-width:767px){
+  .card{
+    margin:0px;
+  }
+  .card-title h2{
+    font-family: Spectral;
+    font-weight: 200;
+    text-align: center;
+    color:#154360;
+    font-size: 30px;
+  }
+  .card-body p{
+    font-family: arvo;
+    text-align: justify;
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+  }
+  .btn{
+    margin-left: 180px;
+    margin-bottom: 40px;
+  }
+}
+
+}
