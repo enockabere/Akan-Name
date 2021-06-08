@@ -52,7 +52,42 @@
   <div class="row">
     <div class="col-md-12">
       <div class="jumbotron">
-        <h3>Fill in Your Details..</h3>
+        <h3>Fill in Your Details</h3>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Birthaday Month:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="email" placeholder="Numeric (1-12)" name="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Day of Birth:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="pwd" placeholder="Numeric (1-31)" name="pwd">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Year of Birth:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="pwd" placeholder="eg. 1970" name="pwd">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <h4>Gender</h4>
+                <label class="checkbox-inline"><input type="checkbox" value="">Male</label>
+                <label class="checkbox-inline"><input type="checkbox" value="">Female</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Submit</button>
+              <button type="submit" class="btn btn-default">Clear</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
