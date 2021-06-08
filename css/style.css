@@ -10,15 +10,28 @@ body {
 }
 /*navbar style*/
 .navbar{
-  background-color: #114357;
+  background-color:#D0D3D4 ;
   border: none;
 }
-
+.active{
+  background-color: #A03CC3;
+  border-radius: 4px;
+  padding: 8px 20px;
+  margin: 8px;
+  color: white;
+}
+#new{
+  color:black;
+  margin:8px;
+  font-weight: 700px;
+  font-family: "Nunito", sans-serif;
+}
 .navbar-header img{
   border-radius: 60%;
   height: 9%;
   width :8%;
   padding:6px;
+  margin:8px;
 }
 .glyphicon {
   color: #F29492;
@@ -28,26 +41,32 @@ body {
   margin: 260px;
 }
 .card-title h2{
-  font-family: Spectral;
-  font-weight: 900;
+  font-family: 'Righteous', cursive;
   text-align: center;
-  color:#154360;
-  font-size: 40px;
-  text-transform: uppercase;
+  color: #117864;
+  font-size: 45px;
+  text-transform: capitalize;
 }
 .card-body p{
-  font-family: arvo;
+  font-family: 'Nunito', sans-serif;
   text-align: justify;
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
+  color: black;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .btn{
-  background-color: #114357;
-  border-color:#114357;
+  border-color: #A03CC3;
   margin-left:260px;
-  font-family: arvo;
+  font-family: 'Nunito', sans-serif;
   font-size: 15px;
+  background-color: #A03CC3;
+  border-radius: 4px;
+  padding: 8px 20px;
+}
+.btn:hover{
+  background-color: black;
+  color: white;
 }
 .jumbotron{
   margin-top: 100px;
@@ -316,16 +335,16 @@ section {
     margin:0px;
   }
   .card-title h2{
-    font-family: Spectral;
+    font-family: 'Righteous', cursive;
     font-weight: 200;
     text-align: center;
-    color:#154360;
+    color: #117864;
     font-size: 30px;
   }
   .card-body p{
-    font-family: arvo;
+    font-family: 'Nunito', sans-serif;
     text-align: justify;
-    color: white;
+    color: black;
     font-weight: 100;
     font-size: 15px;
   }

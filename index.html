@@ -4,12 +4,15 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CDN-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Righteous&display=swap" rel="stylesheet">
+
+  <!--main css-->
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral&effect=neon|outline|emboss|shadow-multiple">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!--toggleable top navigation bar-->
@@ -25,8 +28,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-link"></span> Github</a></li>
+        <li><a id="new" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a id="old" class="active" href="#"><span class="glyphicon glyphicon-link"></span> Github</a></li>
       </ul>
     </div>
   </div>
@@ -37,7 +40,7 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-title">
-          <h2 class="font-effect-emboss">Hypertext Assassin</h2>
+          <h2>Hypertext Assassin</h2>
         </div>
         <div class="card-body">
           <p>In Ghana, Everyone is given an Akan name that corresponds to the day in the week they were born. We only need your gender and birthady and we provide you with an Akan name as cool as you!  </p>
