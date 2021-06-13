@@ -9,7 +9,10 @@
     - Enock Abere
 
 ## Setup instructions
-    -
+    To run the application in your terminal:
+      -Clone Repository on Local Machine
+      -cd into Directory
+      -Open the index.html on the browser
 ​
 ## Behavior Driven Development
     The application only needs your gender and birthday to provide you with an Akan name that corresponds to the day in the week they were born. Below are the steps;
@@ -20,7 +23,7 @@
     - Click the submit button to see what your Akan name would be based on gender.
 
 ## Live link
-    Deployed project can be accessed here -  [Akan Names Generator](https://gmaroko.github.io/akan-name/)
+    Deployed project can be accessed here -  [Akan Names Generator](https://enockabere.github.io/Akan-Name/)
 ​
 ## Technologies used
     - HTML
