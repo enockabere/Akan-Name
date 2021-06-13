@@ -95,9 +95,9 @@ var submission = e => {
   validation(dayB, monthB); //validation
 
   if (document.getElementById("male").checked) {
-    output.innerHTML = `<strong> Hey Champ!</strong> Your Akan is  ${menIndex[birthIndex]}<br/> Your birthady was on ${weekDays[birthIndex]} ${dayB}-${allMonths[monthB-1]}-${yearB}`
+    output.innerHTML = `<strong> Hey Champ!</strong> Your Akan is <font style="color:#F29492">  ${menIndex[birthIndex]} </font><br/> Your birthady was on ${weekDays[birthIndex]} ${dayB}-${allMonths[monthB-1]}-${yearB}`
   } else if (document.getElementById("female").checked) {
-    output.innerHTML = `<strong>Hey you.!</strong> Your Akan Name is ${womenIndex[birthIndex]}<br/>Your birthady was on  ${weekDays[birthIndex]} ${dayB}-${allMonths[monthB-1]}-${yearB} `
+    output.innerHTML = `<strong>Hey you.!</strong> Your Akan Name is <font style="color:#F29492">  ${womenIndex[birthIndex]} </font> <br/>Your birthady was on  ${weekDays[birthIndex]} ${dayB}-${allMonths[monthB-1]}-${yearB} `
   }
   form.reset(); //reset data on form after successful submission
 }
