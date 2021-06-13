@@ -1,254 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--CDN-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-  <!--Google fonts-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Righteous&display=swap" rel="stylesheet">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Nunito:wght@800&family=Righteous&display=swap" rel="stylesheet">
 
-  <!--main css-->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<!--toggleable top navigation bar-->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <img src="img/1.jpg" alt="my personal logo">
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a id="new" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a id="old" class="active" href="#"><span class="glyphicon glyphicon-link"></span> Github</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<section class="hero">
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-title">
-          <h2>Hypertext Assassin</h2>
+    <!--main css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- modal script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--toggleable top navigation bar-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="img/1.jpg" alt="my personal logo">
         </div>
-        <div class="card-body">
-          <p>In Ghana, Everyone is given an Akan name that corresponds to the day in the week they were born. We only need your gender and birthady and we provide you with an Akan name as cool as you!  </p>
-        </div>
-        <div class="card-footer">
-          <a href="#start" class="btn btn-primary" role="button">Get Started</a>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="new" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a id="old" class="active" href="#"><span class="glyphicon glyphicon-link"></span> Github</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-</section>
-<div class="container" id="start">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="jumbotron">
-        <h3>Fill in Your Details</h3>
-        <form class="form-horizontal">
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="email">Birthaday Month:</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="email" placeholder="Numeric (1-12)" name="email">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="pwd">Day of Birth:</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="pwd" placeholder="Numeric (1-31)" name="pwd">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="pwd">Year of Birth:</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="pwd" placeholder="eg. 1970" name="pwd">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <div class="checkbox">
-                <h4>Gender</h4>
-                <label class="checkbox-inline"><input type="checkbox" value="">Male</label>
-                <label class="checkbox-inline"><input type="checkbox" value="">Female</label>
+    </nav>
+    <!--hero section starts here-->
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-title">
+                <h2>Hypertext Assassin</h2>
+              </div>
+              <div class="card-body">
+                <p>In Ghana, Everyone is given an Akan name that corresponds to the day in the week they were born. We only need your gender and birthady and we provide you with an Akan name as cool as you!  </p>
+              </div>
+              <div class="card-footer">
+                <a href="#start" class="btn btn-primary" role="button">Get Started</a>
               </div>
             </div>
           </div>
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#akan">
-                Submit
-              </button>
-              <button type="button" class="btn btn-primary">
-                Clear
-              </button>
+        </div>
+      </div>
+    </section>
+    <section class="forms" id="start">
+      <header class="section-header">
+        <h2>Where the Magic happens</h2>
+        <p>In West Africa, newborns are given special names depending on the day they are born. Diverse ethnicities have variants and meanings as a symbol of cultural integrity and ancestral affiliation.</p>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="jumbotron">
+              <h3>Fill in Your Details</h3>
+              <form id="form">
+                <div class="mb-3">
+                  <label for="day" class="form-label">Date Of Birth</label>
+                  <input type="number" class="form-control" placeholder="Numeric (1-31)"id="day" size="2" required>
+                  <div class="mb-3">
+                    <label for="month" class="form-label">Month Of Birth</label>
+                    <input type="number" class="form-control" placeholder="Numeric (1-12)"id="month" size="2" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="year" class="form-label">Year Of Birth</label>
+                    <input type="number" class="form-control" placeholder="Enter Year of Birth e.g: 1990"id="year" required>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="custom-control custom-checkbox" type="checkbox" name="inlineRadioOptions" id="male" required>
+                    <label class="form-check-label" for="male">Male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="custom-control custom-checkbox" type="checkbox" name="inlineRadioOptions" id="female" value="option2">
+                    <label class="form-check-label" for="female">Female</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  </div>
+                  <div><button type="submit" id="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Submit</button></div>
+                </form>
+                <!--<div class="alert alert-success">
+                  <p id="output"></p>
+                </div>-->
             </div>
           </div>
-        </form>
+        </div>
       </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p id="output"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
     </div>
   </div>
-</div>
+    </section>
+    <!-- Values Section-->
+    <section id="values" class="values">
 
-<!-- Modal -->
-<div class="modal fade" id="akan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Hypertext Assassin</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Your Akan Name is Okwonkwo</p>
-      </div>
-      <div class="modal-footer">
-        <p>Thanks for dropping by.</p>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ======= Values Section ======= -->
-<section id="values" class="values">
+      <div class="container" data-aos="fade-up">
 
-  <div class="container" data-aos="fade-up">
-
-    <header class="section-header">
-      <h2>Our Values</h2>
-      <p>Odit est perspiciatis laborum et dicta</p>
-    </header>
-
-    <div class="row">
-
-      <div class="col-lg-4">
-        <div class="box" data-aos="fade-up" data-aos-delay="200">
-          <img src="assets/img/values-1.png" class="img-fluid" alt="">
-          <h3>Ad cupiditate sed est odio</h3>
-          <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 mt-4 mt-lg-0">
-        <div class="box" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/values-2.png" class="img-fluid" alt="">
-          <h3>Voluptatem voluptatum alias</h3>
-          <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 mt-4 mt-lg-0">
-        <div class="box" data-aos="fade-up" data-aos-delay="600">
-          <img src="assets/img/values-3.png" class="img-fluid" alt="">
-          <h3>Fugit cupiditate alias nobis.</h3>
-          <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Values Section -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12 text-center">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
-              <span>FlexStart</span>
-            </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+        <header class="section-headers">
+          <h2>Our Values</h2>
+          <p>For me, I am driven by two main philosophies: know more today about the world than I knew yesterday and lessen the suffering of others. You'd be surprised how far that gets you.</p>
+        </header>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="box" data-aos="fade-up" data-aos-delay="200">
+              <img src="img/6.png" class="img-fluid" alt="">
+              <h3>Data Integrity</h3>
+              <p>So ensuring the integrity of the data and integrity and validity of the connection is a very important element in any company's strategy that is moving towards a Web service paradigm.</p>
             </div>
           </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="400">
+              <img src="img/5.png" class="img-fluid" alt="">
+              <h3>Data Security</h3>
+              <p>As we’ve come to realize, the idea that security starts and ends with the purchase of a prepackaged firewall is simply misguided.</p>
+            </div>
           </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+              <img src="img/3.png" class="img-fluid" alt="">
+              <h3>Creativity</h3>
+              <p>Good teams become great ones, when members trust each other enough to surrender the ‘me’ for the ‘we.</p>
+            </div>
           </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
-          </div>
-
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
+    </section><!-- End Values Section -->
+    <!-- Footer-->
+    <footer id="footer" class="footer" style="background-color: #B3B6B7">
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
+        </div>
       </div>
-    </div>
-  </footer><!-- End Footer -->
-</body>
+    </footer><!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
